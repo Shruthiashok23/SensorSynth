@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  --bg:     #070b14;
+  --bg1:    #0d1120;
+  --bg2:    #111827;
+  --bg3:    #1a2235;
+  --border: #1e2c45;
+  --b2:     #253450;
+  --text:   #e2e8f0;
+  --t2:     #94a3b8;
+  --t3:     #4a6080;
+  --teal:   #00e5c8;
+  --teal2:  #00b8a0;
+  --coral:  #ff6b35;
+  --violet: #a78bfa;
+  --amber:  #fbbf24;
+  --rose:   #fb7185;
+  --green:  #34d399;
+  --blue:   #60a5fa;
+  --r:      8px;
+  --r2:     12px;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Syne', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg1); }
+::-webkit-scrollbar-thumb { background: var(--b2); border-radius: 3px; }
+.mono { font-family: 'JetBrains Mono', monospace; }
+::selection { background: var(--teal); color: var(--bg); }
+a { color: var(--teal); text-decoration: none; }
+a:hover { text-decoration: underline; }
+:focus-visible { outline: 2px solid var(--teal); outline-offset: 2px; border-radius: 4px; }
